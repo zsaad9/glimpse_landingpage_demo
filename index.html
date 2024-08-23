@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimpse Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #040e2f;
+            --secondary-color: #4cc9f0;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+        }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            flex: 1;
+            max-width: 500px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(76, 201, 240, 0.4);
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+            
+            .hero-image {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">GLIMPSE</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Revolutionize Your Inspection Process</h1>
+                <p>Glimpse Portal™ brings cutting-edge AI to automated inspection reviews, transforming how you analyze and act on critical data.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero.png" alt="Glimpse Portal Dashboard">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
